@@ -19,12 +19,6 @@ A template for creating a Clojure library.
    clojure -Sdeps '{:override-deps {org.clojure/clojure {:mvn/version "1.12.0"}}}' -Tnew create :template io.github.abogoyavlensky/clojure-lib-template :name io.github.myusername/myproject
    ```
    
-   > [!NOTE] 
-   > Replace `io.github.myusername/myproject` with your desired project group id and name.
-   
-   > [!TIP]
-   > If you already have Clojure 1.12 you can omit the `-Sdeps` part.
-   
    Or alternatively using [neil](https://github.com/babashka/neil):
    
    ```bash
