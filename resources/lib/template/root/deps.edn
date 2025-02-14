@@ -20,6 +20,6 @@
                    :ns-default slim.lib
                    :exec-args {:version "0.1.0"
                                :lib {{name}}
-                               :url "{{scm/repo}}"
-                               :description "{{description}}"
+                               :url "https://{{scm/domain}}/{{scm/user}}/{{main}}"
+                               :description "TODO: Add description"
                                :developer "{{developer}}"}}}}

@@ -1,14 +1,14 @@
-# {{main/ns}}
+# {{main}}
 
 [![Clojars Project](https://img.shields.io/clojars/v/{{name}}.svg)](https://clojars.org/{{name}})
 [![cljdoc badge](https://cljdoc.org/badge/{{name}})](https://cljdoc.org/jump/release/{{name}})
-[![CI]({{scm/repo}}/actions/workflows/snapshot.yaml/badge.svg?branch=master)]({{scm/repo}}/actions/workflows/snapshot.yaml)
+[![CI](https://{{scm/domain}}/{{scm/user}}/{{main}}/actions/workflows/snapshot.yaml/badge.svg?branch=master)](https://{{scm/domain}}/{{scm/user}}/{{main}}/actions/workflows/snapshot.yaml)
 
-{{description}}
+*TODO: Add library description*
 
 ## Overview
 
-*TODO: Add library description*
+*TODO: Add library detailed overview*
 
 ## Development
 
