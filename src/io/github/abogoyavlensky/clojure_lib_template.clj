@@ -1,4 +1,4 @@
-(ns lib.template)
+(ns io.github.abogoyavlensky.clojure-lib-template)
 
 (defn data-fn
   "Example data-fn handler.

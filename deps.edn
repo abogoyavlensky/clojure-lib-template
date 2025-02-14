@@ -16,7 +16,7 @@
                                                                      :git/sha "37aa288"}
                                     clojure-lib-template/clojure-lib-template {:local/root "."}}
                        :exec-fn org.corfield.new/create
-                       :exec-args {:template lib/template}}
+                       :exec-args {:template io.github.abogoyavlensky/clojure-lib-template}}
 
            ; This alias is used to create and push a new git tag based on latest version
            :slim {:deps {io.github.abogoyavlensky/slim {:mvn/version "0.2.2"}}
