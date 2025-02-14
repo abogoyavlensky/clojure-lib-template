@@ -8,6 +8,6 @@
 
 (deftest test-validation-lite-template
   (testing "template.edn is valid."
-    (let [template (edn/read-string (slurp (io/resource "io.github.abogoyavlensky/clojure-lib-template/template.edn")))]
+    (let [template (edn/read-string (slurp (io/resource "io/github/abogoyavlensky/clojure_lib_template/template.edn")))]
       (is (s/valid? :org.corfield.new/template template)
           (s/explain-str :org.corfield.new/template template)))))
