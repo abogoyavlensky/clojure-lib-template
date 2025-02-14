@@ -15,9 +15,10 @@ clojure -Sdeps '{:override-deps {org.clojure/clojure {:mvn/version "1.12.0"}}}' 
 
 ***Note**: if you already have Clojure 1.12 you can ommit the `-Sdeps` part.*
 
-Or alternatively using [neil](https://github.com/babashka/neil:
+Or alternatively using [neil](https://github.com/babashka/neil):
 
 ```bash
+brew install babashka/brew/neil
 neil new io.github.abogoyavlensky/clojure-lib-template myusername/myproject
 ```
 
