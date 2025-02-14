@@ -13,7 +13,7 @@ A template for creating a Clojure library.
 
 ## Usage
 
-1. Use this template to create a new Clojure library:
+1. Create a new Clojure library using Clojure CLI:
    ```bash
    clojure -Ttools install-latest :lib io.github.seancorfield/deps-new :as new
    clojure -Sdeps '{:override-deps {org.clojure/clojure {:mvn/version "1.12.0"}}}' -Tnew create :template io.github.abogoyavlensky/clojure-lib-template :name io.github.myusername/myproject
