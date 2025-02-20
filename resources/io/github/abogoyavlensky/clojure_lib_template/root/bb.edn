@@ -18,7 +18,7 @@
         :task (shell "clj-kondo" "--parallel" "--lint" "src" "test")}
 
   test {:doc "Run tests"
-        :task (clojure "-X:test")}
+        :task (clojure "-X:dev:test")}
 
   outdated-check {:doc "Check outdated Clojure deps versions"
                   :task (clojure "-M:outdated")}
