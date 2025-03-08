@@ -21,4 +21,4 @@
            ; This alias is used to create and push a new git tag based on latest version
            :slim {:deps {io.github.abogoyavlensky/slim {:mvn/version "0.2.2"}}
                   :ns-default slim.lib
-                  :exec-args {:version "0.1.2"}}}}
+                  :exec-args {:version "0.1.3"}}}}
