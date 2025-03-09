@@ -29,6 +29,9 @@
   check {:doc "Run all code checks and tests"
          :depends [fmt lint outdated test]}
 
+  install-snapshot {:doc "Install version locally"
+                    :task (clojure "-T:build install :snapshot true")}
+
   install {:doc "Install version locally"
            :task (clojure "-T:build install")}
 

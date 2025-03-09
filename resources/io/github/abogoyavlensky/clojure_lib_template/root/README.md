@@ -38,6 +38,7 @@ test            Run tests
 outdated-check  Check outdated Clojure deps versions
 outdated        Upgrade outdated Clojure deps versions
 check           Run all code checks and tests
+install-snapshot Install snapshot version locally
 install         Install version locally
 deploy-snapshot Deploy snapshot version to Clojars
 deploy-release  Deploy release version to Clojars
