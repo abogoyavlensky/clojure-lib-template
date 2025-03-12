@@ -32,16 +32,25 @@ A template for creating a Clojure library.
 
 3. Start development:
    ```shell
-   # Show all available tasks
-   bb tasks
+   # Set up repository
+   git init
+   git add .
    # Run all checks
    bb check
-   # Install library locally
-   bb install  
-   # Deploy snapshot to Clojars
-   bb deploy-snapshot
-   # Deploy to Clojars
-   bb deploy-release
+   # Commit initial changes
+   git commit -m "Initial commit"
+   ```
+   
+   Manage library:
+   ```shell
+    # Show all available tasks
+    bb tasks 
+    # Install library locally
+    bb install  
+    # Deploy snapshot to Clojars
+    bb deploy-snapshot
+    # Deploy to Clojars
+    bb deploy-release
    ```
 
 ## Project structure
