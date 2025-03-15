@@ -19,6 +19,6 @@
                        :exec-args {:template io.github.abogoyavlensky/clojure-lib-template}}
 
            ; This alias is used to create and push a new git tag based on latest version
-           :slim {:deps {io.github.abogoyavlensky/slim {:mvn/version "0.2.1"}}
+           :slim {:deps {io.github.abogoyavlensky/slim {:mvn/version "0.2.3"}}
                   :ns-default slim.lib
                   :exec-args {:version "0.1.7"}}}}
