@@ -26,6 +26,20 @@ A template for creating a Clojure library.
    neil new io.github.abogoyavlensky/clojure-lib-template io.github.myusername/myproject
    ```
 
+   Or alternatively using [frame](https://github.com/abogoyavlensky/frame), which prompts
+   for the project name, your GitHub username, and the developer name:
+
+   ```bash
+   frame new https://github.com/abogoyavlensky/clojure-lib-template
+   ```
+
+   Non-interactive:
+
+   ```bash
+   frame new --defaults --var username=myusername,developer="My Name" \
+     https://github.com/abogoyavlensky/clojure-lib-template myproject
+   ```
+
 2. Update the project configuration:
    - Edit library build details in `deps.edn`
    - Edit documentation in `README.md`
