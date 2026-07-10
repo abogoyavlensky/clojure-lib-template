@@ -2,7 +2,8 @@
  :vars [{:key :username
          :prompt "GitHub username"
          :type :string
-         :validate {:pattern "^.+$" :msg "Username cannot be empty"}}]
+         :validate {:pattern "^[a-zA-Z0-9]([a-zA-Z0-9-]{0,37}[a-zA-Z0-9])?$"
+                    :msg "Must be a valid GitHub username (letters, digits, hyphens)"}}]
  :computed {:name "io.github.{{ username }}/{{ project-name }}"
             :developer "{{ username | capitalize }}"}
  :raw [".github/**"]}
