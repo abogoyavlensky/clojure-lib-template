@@ -6,6 +6,9 @@
 
   new {:doc "Create a new project"
        :task (clojure "-X:local-new :name tmpl :overwrite :delete")}
+  
+  frame-new {:doc "Create a new project with frame"
+             :task (shell "frame new --var username=testuser,developer=TestDev . tmplframe")}
 
   release {:doc "Create and push a new git tag based on provided version"
            :task (clojure "-T:slim tag :push true")}}}
