@@ -22,8 +22,8 @@ A template for creating a Clojure library.
    Or in non-interactive mode:
 
    ```bash
-   frame new --defaults --var username=myusername,developer="My Name" \
-     https://github.com/abogoyavlensky/clojure-lib-template myproject
+   frame new https://github.com/abogoyavlensky/clojure-lib-template myproject \
+      --defaults --var username=myusername,developer="My Name"
    ```
 
 2. Update the project configuration:
