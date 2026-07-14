@@ -13,27 +13,13 @@ A template for creating a Clojure library.
 
 ## Usage
 
-1. Create a new Clojure library using Clojure CLI:
+1. Create a new Clojure library using [frame]():
    ```bash
-   clojure -Ttools install-latest :lib io.github.seancorfield/deps-new :as new
-   clojure -Sdeps '{:override-deps {org.clojure/clojure {:mvn/version "1.12.0"}}}' -Tnew create :template io.github.abogoyavlensky/clojure-lib-template :name io.github.myusername/myproject
-   ```
-   
-   Or alternatively using [neil](https://github.com/babashka/neil):
-   
-   ```bash
-   brew install babashka/brew/neil
-   neil new io.github.abogoyavlensky/clojure-lib-template io.github.myusername/myproject
+   brew install abogoyavlensky/tap/frame
+   frame new https://github.com/abogoyavlensky/clojure-lib-template myproject
    ```
 
-   Or alternatively using [frame](https://github.com/abogoyavlensky/frame), which prompts
-   for the project name, your GitHub username, and the developer name:
-
-   ```bash
-   frame new https://github.com/abogoyavlensky/clojure-lib-template
-   ```
-
-   Non-interactive:
+   Or in non-interactive mode:
 
    ```bash
    frame new --defaults --var username=myusername,developer="My Name" \
@@ -90,6 +76,25 @@ The template generates a standard Clojure library project with the following str
 ├── LICENSE                # License file
 ├── CHANGELOG.md           # Changelog file
 └── README.md              # Project documentation
+```
+
+## Legacy usage options
+
+> [!WARN]
+> These options will be available until the next minor release only.
+
+Create a new Clojure library using Clojure CLI:
+
+```bash
+clojure -Ttools install-latest :lib io.github.seancorfield/deps-new :as new
+clojure -Sdeps '{:override-deps {org.clojure/clojure {:mvn/version "1.12.0"}}}' -Tnew create :template io.github.abogoyavlensky/clojure-lib-template :name io.github.myusername/myproject
+```
+
+Or alternatively using neil:
+
+```bash
+brew install babashka/brew/neil
+neil new io.github.abogoyavlensky/clojure-lib-template io.github.myusername/myproject
 ```
 
 ## Development
