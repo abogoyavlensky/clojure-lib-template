@@ -13,7 +13,7 @@ A template for creating a Clojure library.
 
 ## Usage
 
-1. Create a new Clojure library using [frame]():
+1. Create a new Clojure library using [frame](https://github.com/abogoyavlensky/frame):
    ```bash
    brew install abogoyavlensky/tap/frame
    frame new https://github.com/abogoyavlensky/clojure-lib-template myproject
