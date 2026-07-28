@@ -17,9 +17,3 @@ lsp/
 .calva
 .DS_Store
 .portal/
-.env
-.env.local
-*.sqlite*
-tmpl*
-.clj-pulse/
-.tmp/
