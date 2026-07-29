@@ -21,4 +21,4 @@ jobs:
         run: |
           bb new
           mise trust && mise install
-          cd tmplframe && bb test
+          cd tmplframe && bb check
