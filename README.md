@@ -84,20 +84,20 @@ The template generates a standard Clojure library project with the following str
 To work with this template, you need:
 
 1. [mise](https://mise.jdx.dev/) (recommended) or manual installation of:
-   - Babashka
+   - [rite](https://github.com/abogoyavlensky/rite) 
    - [frame](https://github.com/abogoyavlensky/frame) 
 
 ### Getting Started
 
 Show all management tasks:
 ```shell
-bb tasks
+rite tasks
 ```
 
 Create a project from the template:
 
 ```shell
-bb new
+rite new
 ```
 
 The new project will be created in the `tmpl` directory at the root.
@@ -113,7 +113,7 @@ Once you are ready to release a new version of the template, bump version in `de
 and then run the following command:
 
 ```shell
-bb release 
+rite release 0.1.1
 ```
 
 A new git tag based on latest version will be created and pushed to the repository.

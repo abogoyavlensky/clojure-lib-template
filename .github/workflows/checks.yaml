@@ -15,10 +15,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/cache-clojure-deps
       - uses: jdx/mise-action@v2
-        with:
-          install_args: "babashka frame"
       - name: Run tests
         run: |
-          bb new
+          rite new
           mise trust && mise install
           cd tmplframe && bb check

@@ -1,5 +1,0 @@
-{:tasks
- {:enter (println "Running task:" (:name (current-task)))
-
-  new {:doc "Create a new project with frame"
-       :task (shell "frame new . tmplframe --var username=testuser")}}}
