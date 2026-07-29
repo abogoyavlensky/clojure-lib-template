@@ -1,5 +1,0 @@
-{:data-fn io.github.abogoyavlensky.clojure-lib-template/data-fn
- :template-fn io.github.abogoyavlensky.clojure-lib-template/template-fn
- :transform
- [["src" "src/{{main/file}}"]
-  ["test" "test/{{main/file}}"]]}

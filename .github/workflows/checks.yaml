@@ -16,12 +16,9 @@ jobs:
       - uses: ./.github/actions/cache-clojure-deps
       - uses: jdx/mise-action@v2
         with:
-          install_args: "babashka java clojure frame"
+          install_args: "babashka frame"
       - name: Run tests
         run: |
-          bb frame-new
-          cd tmplframe && bb test
-      - name: Run legacy tests deps-new
-        run: |
-          bb test
           bb new
+          mise trust && mise install
+          cd tmplframe && bb test

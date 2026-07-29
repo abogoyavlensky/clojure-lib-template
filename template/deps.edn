@@ -20,5 +20,4 @@
                    :exec-args {:version "0.1.0"
                                :lib {{ name }}
                                :url "https://github.com/{{ username }}/{{ project-name }}"
-                               :description "TODO: Add description"
-                               :developer "{{ developer }}"}}}}
+                               :description "TODO: Add description"}}}}

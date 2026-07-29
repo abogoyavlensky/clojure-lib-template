@@ -22,8 +22,7 @@ A template for creating a Clojure library.
    Or in non-interactive mode:
 
    ```bash
-   frame new https://github.com/abogoyavlensky/clojure-lib-template myproject \
-      --defaults --var username=myusername,developer="My Name"
+   frame new https://github.com/abogoyavlensky/clojure-lib-template myproject --var username=myusername
    ```
 
 2. Update the project configuration:
@@ -78,25 +77,6 @@ The template generates a standard Clojure library project with the following str
 └── README.md              # Project documentation
 ```
 
-## Legacy usage options
-
-> [!WARN]
-> These options will be available until the next minor release only.
-
-Create a new Clojure library using Clojure CLI:
-
-```bash
-clojure -Ttools install-latest :lib io.github.seancorfield/deps-new :as new
-clojure -Sdeps '{:override-deps {org.clojure/clojure {:mvn/version "1.12.0"}}}' -Tnew create :template io.github.abogoyavlensky/clojure-lib-template :name io.github.myusername/myproject
-```
-
-Or alternatively using neil:
-
-```bash
-brew install babashka/brew/neil
-neil new io.github.abogoyavlensky/clojure-lib-template io.github.myusername/myproject
-```
-
 ## Development
 
 ### Requirements
@@ -104,27 +84,22 @@ neil new io.github.abogoyavlensky/clojure-lib-template io.github.myusername/mypr
 To work with this template, you need:
 
 1. [mise](https://mise.jdx.dev/) (recommended) or manual installation of:
-   - Java
-   - Clojure
    - Babashka
+   - [frame](https://github.com/abogoyavlensky/frame) 
 
 ### Getting Started
 
-All management tasks:
+Show all management tasks:
 ```shell
 bb tasks
-The following tasks are available:
-
-test    Run tests for the template config
-new     Create a new project
-release Create and push a new git tag based on provided version
 ```
 
-After you updated the template and ran tests `bb test`, you can create a new project to check if everything works as expected:
+Create a project from the template:
 
 ```shell
 bb new
 ```
+
 The new project will be created in the `tmpl` directory at the root.
 
 ### Release
