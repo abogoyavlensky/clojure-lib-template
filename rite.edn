@@ -1,0 +1,8 @@
+{:tasks
+ {new {:doc "Create a new project with frame"
+       :do [{:sh "frame new . tmplframe --var username=testuser"}]}
+  
+  release {:doc "Release a new version as a git tag (pass only numbers without a prefix)"
+           :args [{:name :version}]
+           :do [{:sh ["git" "tag" "v{{version}}"]}
+                {:sh "git push --tags"}]}}}

@@ -93,4 +93,3 @@ Github Actions will automatically deploy a release version to Clojars.
 
 ## License
 MIT License
-Copyright (c) {{ now-year }} {{ developer }}
