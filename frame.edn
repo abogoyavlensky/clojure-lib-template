@@ -3,11 +3,6 @@
          :prompt "GitHub username"
          :type :string
          :validate {:pattern "^[a-zA-Z0-9]([a-zA-Z0-9-]{0,37}[a-zA-Z0-9])?$"
-                    :msg "Must be a valid GitHub username (letters, digits, hyphens)"}}
-        {:key :developer
-         :prompt "Developer name (for the LICENSE copyright line)"
-         :type :string
-         :validate {:pattern "^[^\"\\\\]+$"
-                    :msg "Developer name cannot be empty or contain quotes"}}]
+                    :msg "Must be a valid GitHub username (letters, digits, hyphens)"}}]
  :computed {:name "io.github.{{ username }}/{{ project-name }}"}
  :raw [".github/**"]}
