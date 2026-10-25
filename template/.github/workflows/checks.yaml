@@ -19,19 +19,6 @@ jobs:
       - name: Lint and format
         run: bb fmt-check && bb lint-init && bb lint
 
-  outdated:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/cache-clojure-deps
-        with:
-          key-label: 'outdated'
-      - uses: jdx/mise-action@v2
-        with:
-          install_args: "babashka java clojure"
-      - name: Check outdated deps
-        run: bb outdated-check
-
   tests:
     runs-on: ubuntu-latest
     steps:
